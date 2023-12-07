@@ -1,0 +1,376 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #282a35;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: black;
+    background-color: white;
+    align-items: center;
+    height: 60px;
+}
+
+header .mainNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header .mainNav .logo img {
+    width: 60px;
+    cursor: pointer;
+}
+
+header .mainNav nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .mainNav nav ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* margin-left: 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header .mainNav nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 17px;
+}
+
+header .mainNav nav ul button {
+    background-color: transparent;
+    /* border: none; */
+    border: 1px solid grey;
+    width: 150px;
+    height: 37px;
+    margin-left: 10px;
+    /* color: white; */
+    border-radius: 20px;
+    text-align: left;
+    cursor: text;
+}
+
+header .mainNav .login button.signup {
+    color: white;
+    border-radius: 20px;
+    border: none;
+    background-color: #04AA6D;
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+header .mainNav .login button.login {
+    color: black;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(187, 245, 208);
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+header .mainNav .login button.login:hover {
+    background-color: #04AA6D;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+header .mainNav nav ul li:hover {
+    display: flex;
+    background-color: #04AA6D;
+    height: 60px;
+    /* align-items: center; */
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+
+header .mainNav nav ul li a {
+    margin: 10px;
+}
+
+main {
+    background-image: url(images/astronot.png), url(images/bg.gif);
+    background-position: 90% 60%, center center;
+    background-repeat: no-repeat, repeat;
+    background-color: #282a35;
+    /* background-size: contain; */
+    height: 500px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main .mainKonten {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .mainKonten h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+main .mainKonten h4 {
+    font-size: 23px;
+    color: #fff4a3;
+}
+
+main .mainKonten a {
+    color: inherit;
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 35px;
+}
+
+main .mainKonten a:hover {
+    color: #fff4a3;
+}
+
+main .mainKonten .search {
+    width: 600px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .mainKonten .search a{
+    margin-top: 0;
+    text-decoration: none;
+}
+
+main .mainKonten .search a i {
+    background-color: #04AA6D;
+    height: 50px;
+    width: 100px;
+    font-size: 25px;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+main .mainKonten .search input {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px 0px 0px 50px;
+    border: none;
+    outline: none;
+    padding: 0px 20px;
+    font-size: 16px;
+}
+
+
+.konten{
+    display: flex;
+    height: 500px;
+    background-color: #c5fff8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: black;
+}
+
+.konten:nth-child(2){
+    background-color: #fff78a;
+}
+.konten:nth-child(3){
+    background-color: #2c2c2c;
+    color: white;
+}
+.konten:nth-child(4){
+    background-color: #FDF0F0;
+    color: black;
+}
+.konten:nth-child(5){
+    background-color: #80B3FF;
+    color: black;
+}
+
+.konten h1{
+    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.konten .btn a{
+    background-color: #04AA6D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    width: 200px;
+    height: 45px;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.konten .btn a:nth-child(2){
+    background-color: #0766AD;
+}
+
+.konten .btn a:nth-child(3){
+    background-color: black;
+}
+
+.konten .btn a:nth-child(4){
+    background-color: #ffc0d9;
+    color: black;
+}
+
+.main2 .subKonten {
+    background-color: #282a35;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main2 .subKonten .card {
+    background-color: #ffc0d9;
+    margin: 20px 50px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 600px;
+    border-radius: 8px;
+}
+
+.main2 .subKonten .card:nth-child(2) {
+    background-color: #fff78a;
+}
+
+.main2 .subKonten .card:nth-child(3) {
+    background-color: #ffefe8;
+}
+
+.main2 .subKonten .card:nth-child(4) {
+    background-color: #c5fff8;
+}
+
+.main2 .subKonten .card:nth-child(5) {
+    background-color: #6db9ef;
+}
+
+.main2 .subKonten .card:nth-child(6) {
+    background-color: #fefae0;
+}
+
+.main2 .subKonten .card h1 {
+    font-size: 38px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.main2 .subKonten .card p {
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.main2 .subKonten .card button {
+    height: 45px;
+    width: 200px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(35, 35, 35);
+    cursor: pointer;
+}
+
+.main2 .subKonten .card button:hover {
+    background-color: rgb(9, 9, 9);
+}
+
+footer {
+    background-color: rgb(37, 37, 43);
+    background-image: url(/images/astro-bulan.png), url(/images/bg.gif);
+    background-repeat: no-repeat, repeat;
+    background-position: right bottom, center center /*left top*/;
+    padding-top: 30px;
+    bottom: 0;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .mainFooter {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #fff4a3;
+}
+
+footer .mainFooter h4 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer .mainFooter img {
+    width: 60px;
+}
+
+footer .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 70px;
+    font-size: 10px;
+    color: white;
+}
+
+footer .wrap {
+    /* background-color: white; */
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+footer .text {
+    margin-top: 30px;
+    color: white;
+    font-size: 10px;
+}
